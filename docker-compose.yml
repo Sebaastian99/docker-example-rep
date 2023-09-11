@@ -4,7 +4,7 @@ services:
     env_file: .env
     environment:
        POSTGRES_PASSWORD: password
-       volumes:
+    volumes:
         - ./local-db:/var/lib/postgresql/data
      
   web:
