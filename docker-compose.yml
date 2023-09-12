@@ -2,8 +2,6 @@ services:
   db:
     image: postgres:15
     env_file: .env
-    environment:
-       POSTGRES_PASSWORD: password
     volumes:
         - ./local-db:/var/lib/postgresql/data
      
